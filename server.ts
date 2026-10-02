@@ -164,7 +164,7 @@ Please provide a helpful, encouraging tutoring response according to Hint Level 
 };
 
 app.post('/api/tutor', tutorHandler);
-app.post('/MATHQUESTKIDS-1/api/tutor', tutorHandler);
+app.post('/MATHQUESTKIDS-V5/api/tutor', tutorHandler);
 
 // Setup Vite or static serving
 async function startServer() {
@@ -175,11 +175,11 @@ async function startServer() {
     });
     // Redirect root to base path for dev convenience
     app.get('/', (_req, res) => {
-      res.redirect('/MATHQUESTKIDS-1/');
+      res.redirect('/MATHQUESTKIDS-V5/');
     });
     app.use(vite.middlewares);
   } else {
-    app.use('/MATHQUESTKIDS-1', express.static(path.join(__dirname, 'dist')));
+    app.use('/MATHQUESTKIDS-V5', express.static(path.join(__dirname, 'dist')));
     app.use(express.static(path.join(__dirname, 'dist')));
     app.get('*', (_req, res) => {
       res.sendFile(path.join(__dirname, 'dist', 'index.html'));

@@ -7,7 +7,7 @@ import { defineConfig } from 'vite';
 export default defineConfig(() => {
   return {
     // GitHub Pages configuration
-    base: '/MATHQUESTKIDS-1/',
+    base: '/MATHQUESTKIDS-V5/',
 
     plugins: [react(), tailwindcss()],
 
