@@ -1,0 +1,6 @@
+{
+  "name": "MathQuest Kids - KSSR Primary Mathematics",
+  "description": "Fun, safe, gamified mathematics learning platform aligned with Malaysia's KSSR primary curriculum for Year 1 to 6 students with AI Socratic tutoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
